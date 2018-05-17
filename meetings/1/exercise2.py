@@ -14,3 +14,6 @@ assert alist == ['elem', '#', 'elem', '#', 'elem', '#', 'elem', '#', 'elem']
 assert ... == ['elem', 'elem', 'elem', 'elem', 'elem']
 
 #'''
+
+new_list = filter(lambda item: item != '#', alist)
+print(list(new_list))

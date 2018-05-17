@@ -8,7 +8,8 @@ import sys
 print(__name__)
 
 def print_list(alist):
-    pass # insert your code here
+    for item in alist:
+        print(item)
 
 if __name__ == '__main__':
     print_list(sys.argv)

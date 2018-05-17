@@ -4,8 +4,12 @@
 alist = [[['a'], 'a'], 'a', 'a', [[]]]
 
 def flat_list(alist):
-    #insert your code here
-    pass
+    if not isinstance(alist, list):
+        return [alist]
+    result = []
+    for x in alist:
+        result.extend(flat(x))
+    return result
 
 
 '''
@@ -17,3 +21,4 @@ type(elem) == list
 '''
 
 assert flat_list(alist) == ['a'] * 4
+# ['a'] * 4 ==  ['a', 'a', 'a', 'a']
