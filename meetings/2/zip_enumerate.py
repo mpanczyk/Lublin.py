@@ -10,15 +10,15 @@ Aż się zepsujesz.'''
 
 
 first_names = [
-    'Rockatansky',
-    'Smith',
-    'Callahan',
-]
-
-last_names = [
     'Max',
     'Winston',
     'Harry',
+]
+
+last_names = [
+    'Rockatansky',
+    'Smith',
+    'Callahan',
 ]
 
 # Write each of the name join: first_name and last_name in one line.
