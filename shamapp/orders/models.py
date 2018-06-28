@@ -4,7 +4,10 @@ from django.db import models
 
 class Provider(models.Model):
     full_name = models.CharField(max_length=100)
-    url = models.URLField()
+    url = models.URLField(
+        blank=True,
+        null=True,
+    )
     opening_hour = models.TimeField()
     closing_hour = models.TimeField()
     delivery_cost = models.DecimalField(
