@@ -18,3 +18,9 @@ class Provider(models.Model):
         decimal_places=2,
         max_digits=5,
     )
+
+    def __str__(self):
+        return '{name} (id={id})'.format(
+            name=self.full_name,
+            id=self.id,
+        )
